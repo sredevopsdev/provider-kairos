@@ -5,14 +5,12 @@ go 1.18
 replace github.com/elastic/gosigar => github.com/mudler/gosigar v0.14.3-0.20220502202347-34be910bdaaf
 
 require (
-	github.com/bramvdbogaerde/go-scp v1.2.1
 	github.com/creack/pty v1.1.19-0.20220421211855-0d412c9fbeb1
 	github.com/gliderlabs/ssh v0.2.2
 	github.com/google/go-containerregistry v0.15.2
 	github.com/ipfs/go-log v1.0.5
 	github.com/kairos-io/kairos-agent/v2 v2.1.11-0.20230710123948-9c5731baa2e3
 	github.com/kairos-io/kairos-sdk v0.0.9
-	github.com/luthermonson/go-proxmox v0.0.0-alpha3
 	github.com/mudler/edgevpn v0.23.1
 	github.com/mudler/go-pluggable v0.0.0-20230126220627-7710299a0ae5
 	github.com/mudler/go-processmanager v0.0.0-20220724164624-c45b5c61312d
@@ -20,22 +18,16 @@ require (
 	github.com/onsi/gomega v1.27.10
 	github.com/pterm/pterm v0.12.62
 	github.com/samber/lo v1.38.1
-	github.com/spectrocloud/peg v0.0.0-20230517140709-5c01c852c557
 	github.com/urfave/cli/v2 v2.25.7
 	go.uber.org/zap v1.24.0
-	golang.org/x/crypto v0.11.0
+	golang.org/x/crypto v0.11.0 // indirect
 	golang.org/x/mod v0.10.0
 	gopkg.in/yaml.v1 v1.0.0-20140924161607-9f9df34309c0
 	gopkg.in/yaml.v2 v2.4.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
-require (
-	github.com/google/uuid v1.3.0
-	github.com/kairos-io/go-nodepair v0.0.0-20230424150716-d8f0757542c3
-	github.com/lmittmann/ppm v1.0.2
-	github.com/makiuchi-d/gozxing v0.1.1
-)
+require github.com/kairos-io/go-nodepair v0.0.0-20230424150716-d8f0757542c3
 
 require (
 	atomicgo.dev/cursor v0.1.1 // indirect
@@ -48,13 +40,10 @@ require (
 	github.com/aybabtme/rgbterm v0.0.0-20170906152045-cc83f3b3ce59 // indirect
 	github.com/benbjohnson/clock v1.3.1 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
-	github.com/buger/goterm v1.0.4 // indirect
 	github.com/c-robinson/iplib v1.0.6 // indirect
-	github.com/cavaliergopher/grab/v3 v3.0.1 // indirect
 	github.com/cenkalti/backoff/v4 v4.2.1 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/chuckpreslar/emission v0.0.0-20170206194824-a7ddd980baf9 // indirect
-	github.com/codingsince1985/checksum v1.3.0 // indirect
 	github.com/containerd/cgroups v1.1.0 // indirect
 	github.com/containerd/console v1.0.3 // indirect
 	github.com/containerd/containerd v1.7.1 // indirect
@@ -67,7 +56,6 @@ require (
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.2.0 // indirect
 	github.com/denisbrodbeck/machineid v1.0.1 // indirect
 	github.com/disintegration/imaging v1.6.2 // indirect
-	github.com/diskfs/go-diskfs v1.3.0 // indirect
 	github.com/docker/cli v23.0.5+incompatible // indirect
 	github.com/docker/distribution v2.8.1+incompatible // indirect
 	github.com/docker/docker v23.0.6+incompatible // indirect
@@ -92,8 +80,8 @@ require (
 	github.com/google/gopacket v1.1.19 // indirect
 	github.com/google/pprof v0.0.0-20230406165453-00490a63f317 // indirect
 	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 // indirect
+	github.com/google/uuid v1.3.0 // indirect
 	github.com/gookit/color v1.5.3 // indirect
-	github.com/gorilla/websocket v1.5.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/hashicorp/golang-lru v0.5.4 // indirect
@@ -111,7 +99,6 @@ require (
 	github.com/jbenet/go-temp-err-catcher v0.1.0 // indirect
 	github.com/jbenet/goprocess v0.1.4 // indirect
 	github.com/jezek/xgb v0.0.0-20210312150743-0e0f116e1240 // indirect
-	github.com/jinzhu/copier v0.3.4 // indirect
 	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/kbinani/screenshot v0.0.0-20210720154843-7d3a670d8329 // indirect
 	github.com/klauspost/compress v1.16.5 // indirect
@@ -138,7 +125,7 @@ require (
 	github.com/lithammer/fuzzysearch v1.1.8 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/lxn/win v0.0.0-20210218163916-a377121e959e // indirect
-	github.com/magefile/mage v1.14.0 // indirect
+	github.com/makiuchi-d/gozxing v0.1.1 // indirect
 	github.com/marten-seemann/tcp v0.0.0-20210406111302-dfbc87cc63fd // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.19 // indirect
@@ -170,7 +157,6 @@ require (
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
 	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58 // indirect
 	github.com/peterbourgon/diskv v2.0.1+incompatible // indirect
-	github.com/phayes/freeport v0.0.0-20220201140144-74d24b5ae9f5 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/polydawn/refmt v0.89.0 // indirect
 	github.com/prometheus/client_golang v1.15.0 // indirect
@@ -179,9 +165,8 @@ require (
 	github.com/prometheus/procfs v0.9.0 // indirect
 	github.com/qeesung/image2ascii v1.0.1 // indirect
 	github.com/quic-go/qpack v0.4.0 // indirect
-	github.com/quic-go/qtls-go1-19 v0.3.2 // indirect
-	github.com/quic-go/qtls-go1-20 v0.2.2 // indirect
-	github.com/quic-go/quic-go v0.34.0 // indirect
+	github.com/quic-go/qtls-go1-20 v0.3.1 // indirect
+	github.com/quic-go/quic-go v0.37.7 // indirect
 	github.com/quic-go/webtransport-go v0.5.2 // indirect
 	github.com/raulk/go-watchdog v1.3.0 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
@@ -226,7 +211,6 @@ require (
 	google.golang.org/genproto v0.0.0-20230306155012-7f2fa6fef1f4 // indirect
 	google.golang.org/grpc v1.53.0 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect
-	gopkg.in/djherbis/times.v1 v1.3.0 // indirect
 	lukechampine.com/blake3 v1.1.7 // indirect
 	nhooyr.io/websocket v1.8.7 // indirect
 )
